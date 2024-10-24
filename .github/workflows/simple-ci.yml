@@ -1,0 +1,22 @@
+name: Homework tasks CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout to my repo
+      uses: actions/checkout@v3
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+
+    - name: complile all classes
+      run: javac src/**/*.java -d out
+
+    - name: run main class 
+      run: java -cp out Main
