@@ -12,7 +12,6 @@ class CreateArrayListExample {
         List<String> fromANotherCollection = new ArrayList<>(animals);
 
 
-        // Adding new elements to the ArrayList
         animals.add("Lion");
         animals.add("Tiger");
         animals.add("Cat");
@@ -20,7 +19,6 @@ class CreateArrayListExample {
 
         System.out.println(animals);
 
-        // Adding an element at a particular index in an ArrayList
         animals.add(2, "Elephant");
         System.out.println(animals);
     }
