@@ -18,7 +18,7 @@ jobs:
 
 
     - name: complile all classes
-      run: javac -sourcepath Module-303/Module-303/src -d out Module-303/Module-303/src/**/*.java
+      run: javac -sourcepath Module-303/Module-303/src -d out Module-303/Module-303/src/*.java
 
     - name: run main class 
       run: java -cp out Main
